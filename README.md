@@ -17,6 +17,6 @@ Use this as a starting point to complete the WDD 231 personal activity. We will 
 
 - `npm run build` to build final files when you are ready to turn in.
 
-# netlify site link
+## netlify site link
 
 - https://glittering-halva-fb288e.netlify.app/
