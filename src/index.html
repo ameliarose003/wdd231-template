@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>National Park Services</title>
     <link rel="stylesheet" href="css/style.css" />
-    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/main.js" defer></script>
   </head>
   <body>
     <p class="disclaimer">
@@ -64,12 +64,12 @@
       </section>
       <section id="park-header">
           <div class="hero-banner">
-            <img src="images/3C7D5920-1DD8-B71B-0B83F012ED802CEA.jpg" alt="Header image">
+            <img src="images/yellowstone.jpg" alt="Header image">
             <div class="hero-banner_content">
-              <a href="#" class="hero-banner_title">Yellowstone</a>
+              <a href="#" class="hero-banner_title"></a>
               <p class="hero-banner_subtitle">
-                <span>National Park</span>
-                <span>ID, MT, WY</span>
+                <span></span>
+                <span></span>
               </p>
             </div>
           </div>
@@ -91,8 +91,6 @@
             </li>
           </ul>
         </nav>
-      <!-- </section>
-      <section id="park-header"> -->
         <nav class="park-nav">
           <ul>
           <li>
@@ -154,7 +152,11 @@
       </nav>
       </section>
     </header>
-    <main id="main"></main>
+    <main id="main">
+      <section class="intro">
+      </section>
+      <section class="info"></section>
+    </main>
     <footer id="park-footer"></footer>
   </body>
 </html>

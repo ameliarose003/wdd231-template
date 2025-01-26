@@ -1,3 +1,5 @@
+
+
 :root {
   --bs-black: #000;
   --bs-brown: #393423;
@@ -172,6 +174,7 @@ a:hover {
   fill: white;
 } */
 
+
 .global-header {
   background-color: var(--bs-black);
   color: var(--bs-white);
@@ -179,7 +182,19 @@ a:hover {
   justify-content: space-between;
   fill: white;
   align-items: center;
-  padding: 10px;
+  padding: 0px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.global-header h1 {
+  padding: 0;
+  margin: 5px 5px;
+  font-size: 15px;
+}
+
+span.logo {
+  margin: 10px;
 }
 
 .global-header a:link,
@@ -193,6 +208,7 @@ a:hover {
 .global-header .icon {
   width: 15px;
   height: 15px;
+
 }
 
 .global-header_right {
@@ -209,49 +225,17 @@ a:hover {
   /* padding: 0 1rem; */
   /* margin-top: 6px; */
   margin-left: 10px;
-  background-color: transparent;
+  background-color: rgb(0, 0, 0, 0.7);
   color: white;
   font-size: 1rem;
-  padding: 1.2em;
+  border: none;
+  /* padding: 1.2em; */
+  /* padding: 0; */
   /* display: flex; */
   align-items: center;
   text-transform: uppercase;
   border-left: 1px solid var(--bs-grey-5);
   cursor: pointer;
-}
-
-/* Hero banner */
-.hero-banner {
-  display: grid;
-  grid-template-columns: 1fr;
-}
-.hero-banner > img {
-  width: 100%;
-  height: 350px;
-  object-fit: cover;
-  grid-column: 1/2;
-  grid-row: 1/3;
-}
-
-.hero-banner__content {
-  background-color: rgba(0, 0, 0, 0.7);
-  color: white;
-  grid-column: 1/2;
-  grid-row: 2/3;
-  display: flex;
-  align-items: center;
-  gap: 1em;
-  padding: 0.5em 1em;
-}
-
-.hero-banner__title {
-  font-size: 1.8em;
-}
-
-.hero-banner__subtitle {
-  display: flex;
-  flex-direction: column;
-  font-size: 0.8rem;
 }
 
 
@@ -260,9 +244,10 @@ a:hover {
 .park-nav > ul {
   list-style: none;
   padding-left: 0;
+  padding-right: 100px;
   margin: 0;
   display: flex;
-  justify-content: center;
+  justify-content: end;
   background-color: var(--bs-black);
   font-size: 0.8rem;
 }
@@ -281,18 +266,79 @@ a:hover {
   height: 24px;
 }
 
+/* Hero banner */
 
 
-#park-header {
-  background-color: var(--bs-black);
+
+
+
+
+
+.hero-banner__content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: none;
   color: white;
+  /* grid-column: 2/3; */
+  /* grid-row: 2; */
+  /* display: flex;
+  align-items: center; */
+  /* gap: 1em; */
+  padding: 0.5em 1em;
+}
+
+.hero-banner__content h1,
+.hero-banner__content p {
+  margin: 0; /* Remove default margin for better spacing */
+}
+
+.hero-banner__title {
+  font-size: 1.8em;
+}
+
+.hero-banner__subtitle {
   display: flex;
   flex-direction: column;
+  font-size: 0.8rem;
+}
+/* end of hero.banner */
+
+#park-header {
+  background-image: url('src/images/yellowstone.jpg');
+  height: 450px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 1fr 1fr;
+  flex-direction: column;
+  color: white;
+}
+
+.hero-banner {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  display: grid;
+}
+
+.hero-banner > img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  grid-column: 1/span 3;
+  grid-row: 1/span 2;
 }
 
 #park-header .hero-banner_content {
+  grid-column: 1/ span 3;
+  grid-row: 2 / 3;
   display: flex;
   align-items: center;
+  background-color: rgb(0, 0, 0, 0.7);
+  padding-left: 100px;
 }
 
 #park-header .hero-banner_content .hero-banner_title {
@@ -313,11 +359,17 @@ a:hover {
 } */
 
 #park-header .global-nav {
+  grid-column: 1/ span 3;
+  grid-row: 2/ span 3;
   display: none;
 }
 
 #park-header .park-nav {
-  display: flex;
+  grid-row: 2/ span 3;
+}
+
+nav.park-nav {
+  grid-column: 1/ span 3;
 
 }
 
@@ -325,9 +377,9 @@ a:hover {
   display: flex;
   justify-self: center;
   align-items: center;
-  width: 35px;
-  height: 35px;
-  
+  width: 25px;
+  height: 25px;
+  padding: 3px;
 }
 
 #park-nav {
@@ -337,4 +389,36 @@ a:hover {
 
 #park-nav li {
   text-decoration: none;
+}
+
+.intro {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.intro h1 {
+  font-size: xx-large;
+}
+
+.intro p {
+  font-size:smaller;
+  margin-bottom: 2.5rem;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 1rem;
+  margin-left: 100px;
+}
+img.media-card_img {
+  width: 350px;
+}
+
+.media-card p {
+  margin-right: 5rem;
+}
+
+#park-footer {
+  margin: 100px;
 }
