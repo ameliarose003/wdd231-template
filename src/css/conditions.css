@@ -1,3 +1,51 @@
 main {
     margin-left: 120px;
+    margin-right: 120px;
+    margin-bottom: 20px;
+}
+
+summary {
+    border: 1px solid var(--bs-grey-3);
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.alerts > ul {
+    list-style: none;
+    padding: 0;
+}
+
+.alert {
+    margin: 0.5rem;
+    padding: 0.5rem 0 0.8rem 0;
+    display: flex;
+    gap: 1em;
+    border-bottom: 1px solid var(--bs-grey-3);
+}
+
+.alert h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.alert p {
+    margin: 0;
+}
+
+.alert svg {
+    height: 30px;
+    width: 30px;
+    margin: 0.25em;
+    flex: 0 0 auto;
+}
+
+.visitorCenters {
+    margin: 0.5rem;
+    padding: 0.5rem 0 0.8rem 0;
+    gap: 1em;
+    border-bottom: 1px solid var(--bs-grey-3);
+}
+
+.services {
+    margin-bottom: 10px;
 }
