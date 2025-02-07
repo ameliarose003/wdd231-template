@@ -1,4 +1,13 @@
+@import "partials/blocks.css";
+@import "partials/footer.css";
+@import "partials/header.css";
+@import "partials/global.css";
+@import "partials/variables.css";
+@import "partials/utilities.css";
+@import "home.css";
+@import "conditions.css"
 
+/* 
 
 :root {
   --bs-black: #000;
@@ -86,11 +95,11 @@
   --bs-link-hover-color: #003e6b;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
-}
+} */
 
 /* Global styles */
 
-* {
+/* * {
   box-sizing: border-box;
 }
 img {
@@ -110,10 +119,10 @@ a:visited {
 
 a:hover {
   color: var(--bs-link-hover-color);
-}
+} */
 
 /* Skip links styling */
-.skip-links ul {
+/* .skip-links ul {
   list-style-type: none;
   margin: 0;
   padding-left: 0;
@@ -131,11 +140,11 @@ a:hover {
 .skip-links a:focus {
   top: 2px;
   z-index: 9999;
-}
+} */
 
 /* Title and logo styling */
 
-.site-title {
+/* .site-title {
   display: flex;
   align-items: center;
 }
@@ -152,11 +161,11 @@ a:hover {
   border-top: 34px solid var(--bs-light-green);
   border-left: 13px solid transparent;
   border-right: 13px solid transparent;
-}
+} */
 
 /* Utility styles */
 
-.visually-hidden {
+/* .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -167,14 +176,14 @@ a:hover {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
+} */
 
 /* svg {
   background-color: var(--bs-black);
   fill: white;
 } */
 
-
+/*
 .global-header {
   background-color: var(--bs-black);
   color: var(--bs-white);
@@ -221,26 +230,26 @@ span.logo {
   padding: 0 1rem;
   margin-top: 6px;
 }
-#global-nav-toggle {
+#global-nav-toggle {*/
   /* padding: 0 1rem; */
-  /* margin-top: 6px; */
+  /* margin-top: 6px; *//*
   margin-left: 10px;
   background-color: rgb(0, 0, 0, 0.7);
   color: white;
   font-size: 1rem;
-  border: none;
+  border: none;*/
   /* padding: 1.2em; */
   /* padding: 0; */
-  /* display: flex; */
+  /* display: flex; *//*
   align-items: center;
   text-transform: uppercase;
   border-left: 1px solid var(--bs-grey-5);
   cursor: pointer;
-}
+}*/
 
 
 /* Park nav styling */
-
+/*
 .park-nav > ul {
   list-style: none;
   padding-left: 0;
@@ -264,7 +273,7 @@ span.logo {
 .park-nav svg {
   width: 24px;
   height: 24px;
-}
+} */
 
 /* Hero banner */
 
@@ -273,7 +282,7 @@ span.logo {
 
 
 
-
+/* 
 .hero-banner__content {
   position: absolute;
   bottom: 0;
@@ -284,13 +293,13 @@ span.logo {
   /* grid-row: 2; */
   /* display: flex;
   align-items: center; */
-  /* gap: 1em; */
+  /* gap: 1em; *//*
   padding: 0.5em 1em;
 }
 
 .hero-banner__content h1,
 .hero-banner__content p {
-  margin: 0; /* Remove default margin for better spacing */
+  margin: 0; *//* Remove default margin for better spacing *//*
 }
 
 .hero-banner__title {
@@ -301,9 +310,9 @@ span.logo {
   display: flex;
   flex-direction: column;
   font-size: 0.8rem;
-}
+}*/
 /* end of hero.banner */
-
+/*
 #park-header {
   background-image: url('src/images/yellowstone.jpg');
   height: 450px;
@@ -352,12 +361,12 @@ span.logo {
   display: flex;
   flex-direction: column;
   margin-left: 5px;
-}
+}*/
 
 /* #global-nav {
   display: none;
 } */
-
+/*
 #park-header .global-nav {
   grid-column: 1/ span 3;
   grid-row: 2/ span 3;
@@ -389,8 +398,8 @@ nav.park-nav {
 
 #park-nav li {
   text-decoration: none;
-}
-
+} */
+/* 
 .intro {
   padding-left: 100px;
   padding-right: 100px;
@@ -410,15 +419,15 @@ nav.park-nav {
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 1rem;
   margin-left: 100px;
-}
-img.media-card_img {
+} */
+/* img.media-card_img {
   width: 350px;
 }
 
 .media-card p {
   margin-right: 5rem;
-}
+} */
 
-#park-footer {
+/* #park-footer {
   margin: 100px;
-}
+} */

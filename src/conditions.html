@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>National Park Services</title>
     <link rel="stylesheet" href="css/style.css" />
-    <script type="module" src="js/pages/main.js" defer></script>
+    <script type="module" src="js/pages/conditions.mjs" defer></script>
   </head>
   <body>
     <p class="disclaimer">
@@ -153,9 +153,26 @@
       </section>
     </header>
     <main id="main">
-      <section class="intro">
-      </section>
-      <section class="info"></section>
+        <h1>Current Conditions</h1>
+        <section id="alerts">
+            <h2>Alerts</h2>
+            <ul></ul>
+        </section>
+        <section id="visitorServices">
+            <h2>Visitor Services</h2>
+            <details name="current-details">
+                <summary>Visitor Services</summary>
+                <ul></ul>
+            </details>
+        </section>
+        <section id="activites">
+            <details name="current-details">
+                <summary>All Activites</summary>
+                <ul></ul>
+            </details>
+        </section>
+
+
     </main>
     <footer id="park-footer"></footer>
   </body>

@@ -1,6 +1,6 @@
 
 // const apiKey = import.meta.env.VITE_NPS_API_KEY;
-const apiKey = "1fgFpSyfNLgQ2k9zIzl5cAHfzuU89fDpbRNb52Mc";
+const apiKey = "";
 const baseUrl = "https://developer.nps.gov/api/v1/";
 console.log(apiKey);
 

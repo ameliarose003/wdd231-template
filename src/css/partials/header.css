@@ -1,0 +1,226 @@
+.site-title {
+    display: flex;
+    align-items: center;
+  }
+  .site-title > span {
+    font-size: 1rem;
+    margin-left: 0.3em;
+  }
+  
+  .logo {
+    height: 0;
+    width: 0;
+    margin: 0.5em;
+    display: inline-block;
+    border-top: 34px solid var(--bs-light-green);
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+  }
+  
+.global-header {
+    background-color: var(--bs-black);
+    color: var(--bs-white);
+    display: flex;
+    justify-content: space-between;
+    fill: white;
+    align-items: center;
+    padding: 0px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  
+  .global-header h1 {
+    padding: 0;
+    margin: 5px 5px;
+    font-size: 15px;
+  }
+  
+  span.logo {
+    margin: 10px;
+  }
+  
+  .global-header a:link,
+  .global-header a:visited,
+  #park-header a:link,
+  #park-header a:visited {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .global-header .icon {
+    width: 15px;
+    height: 15px;
+  
+  }
+  
+  .global-header_right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .global-header_right .search-icon {
+    padding: 0 1rem;
+    margin-top: 6px;
+  }
+  #global-nav-toggle {
+    /* padding: 0 1rem; */
+    /* margin-top: 6px; */
+    margin-left: 10px;
+    background-color: rgb(0, 0, 0, 0.7);
+    color: white;
+    font-size: 1rem;
+    border: none;
+    /* padding: 1.2em; */
+    /* padding: 0; */
+    /* display: flex; */
+    align-items: center;
+    text-transform: uppercase;
+    border-left: 1px solid var(--bs-grey-5);
+    cursor: pointer;
+  }
+  
+  
+  /* Park nav styling */
+  
+  .park-nav > ul {
+    list-style: none;
+    padding-left: 0;
+    padding-right: 100px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    background-color: var(--bs-black);
+    font-size: 0.8rem;
+  }
+  .park-nav a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8em 2em;
+  }
+  .park-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  .park-nav svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  /* New stuff */
+  
+.hero-banner__content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: none;
+  color: white;
+  /* grid-column: 2/3; */
+  /* grid-row: 2; */
+  /* display: flex;
+  align-items: center; */
+  /* gap: 1em; */
+  padding: 0.5em 1em;
+}
+
+.hero-banner__content h1,
+.hero-banner__content p {
+  margin: 0; /* Remove default margin for better spacing */
+}
+
+.hero-banner__title {
+  font-size: 1.8em;
+}
+
+.hero-banner__subtitle {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8rem;
+}
+/* end of hero.banner */
+
+#park-header {
+  background-image: url('src/images/yellowstone.jpg');
+  height: 450px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 1fr 1fr;
+  flex-direction: column;
+  color: white;
+}
+
+.hero-banner {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  display: grid;
+}
+
+.hero-banner > img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  grid-column: 1/span 3;
+  grid-row: 1/span 2;
+}
+
+#park-header .hero-banner_content {
+  grid-column: 1/ span 3;
+  grid-row: 2 / 3;
+  display: flex;
+  align-items: center;
+  background-color: rgb(0, 0, 0, 0.7);
+  padding-left: 100px;
+}
+
+#park-header .hero-banner_content .hero-banner_title {
+  font-size:x-large;
+  font-weight: bolder;
+  margin: 15px;
+}
+
+#park-header .hero-banner_content .hero-banner_subtitle {
+  font-size: small;
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+}
+
+
+#park-header .global-nav {
+  grid-column: 1/ span 3;
+  grid-row: 2/ span 3;
+  display: none;
+}
+
+#park-header .park-nav {
+  grid-row: 2/ span 3;
+}
+
+nav.park-nav {
+  grid-column: 1/ span 3;
+
+}
+
+#park-header .icon {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  padding: 3px;
+}
+
+#park-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+#park-nav li {
+  text-decoration: none;
+}

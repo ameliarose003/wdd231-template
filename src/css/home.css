@@ -1,0 +1,28 @@
+
+.intro {
+    /* padding-left: 100px; */
+    padding-right: 100px;
+  }
+  
+  .intro h1 {
+    font-size: xx-large;
+  }
+  
+  .intro p {
+    font-size:smaller;
+    margin-bottom: 2.5rem;
+  }
+  
+  .info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1rem;
+    /* margin-left: 100px; */
+    /* margin-right: 100px; */
+  }
+  
+  @media screen and (max-width: 900px) {
+    .info {
+      grid-template-columns: 1fr;
+    }
+  }
