@@ -44,8 +44,10 @@ summary {
     padding: 0.5rem 0 0.8rem 0;
     gap: 1em;
     border-bottom: 1px solid var(--bs-grey-3);
+    cursor: pointer;
 }
 
 .services {
     margin-bottom: 10px;
+    cursor: pointer;
 }
