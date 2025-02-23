@@ -1,6 +1,8 @@
 import { getAlertData, getParkData , getVisitorCenterData , getActivitiesData} from "../parkService.mjs";
 import { setHeaderInfo } from "../setHeaderFooter.mjs";
 import { setParkFooter , alertCardTemplate , visitorCardTemplate , activitesCardTemplate} from "../templates.mjs";
+// import "../css/style.css"; // we can do this type of import because we are using Vite
+// import "../css/conditions.css";
 
 function setParkAlertLinks(alerts) {
     const alertContainer = document.querySelector("#alerts");

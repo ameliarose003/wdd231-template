@@ -1,6 +1,30 @@
 import {parkInfoTemplate, setParkFooter} from "./templates.mjs";
 import { getParkData , getInfoLinks} from "./parkService.mjs";
 
+export function toggleGlobalNav() {
+    const menuButton = document.querySelector('#global-nav-toggle');
+    // const open = document.querySelector('.global-nav_toggle--open');
+    // const closed = document.querySelector('.global-nav_toggle--closed')
+    
+    button.addEventListener('click', (ev) => {
+        let target = ev.target;
+
+        document.querySelector(".global-nav").classList.toggle("show");
+
+        if (target.tagName != "BUTTON") {
+           target = target.closest("button");
+        }
+
+        if (document.querySelector(".global-nav").classList.contains("show")) {
+            target.setAttribute("aria-expanded", true);
+        } else {
+            target.setAttribute("aria-expanded", false);
+        }
+       
+        console.log("toggle");
+
+    });
+}
 
 export function setHeaderInfo(data) {
     const disclaimer = document.querySelector(".disclaimer > a");

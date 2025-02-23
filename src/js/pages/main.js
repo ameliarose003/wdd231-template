@@ -1,5 +1,5 @@
 import { getParkData , getInfoLinks} from "../parkService.mjs";
-import { setHeaderInfo } from "../setHeaderFooter.mjs";
+import { setHeaderInfo , toggleGlobalNav } from "../setHeaderFooter.mjs";
 import { parkInfoTemplate , setParkIntro , mediaCardTemplate , setParkFooter } from "../templates.mjs";
 
 
@@ -108,7 +108,7 @@ function setParkInfoLinks(links) {
 
 async function init() {
     const parkData = await getParkData();
-
+    toggleGlobalNav();
     setHeaderInfo(parkData);
     setParkIntro(parkData);
     const links = getInfoLinks(parkData.images);

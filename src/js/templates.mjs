@@ -1,5 +1,7 @@
 import { getAlertData, getParkData , getInfoLinks} from "./parkService.mjs";
 import { getVoicePhone, getMailingAddress } from "./setHeaderFooter.mjs";
+import spritePath from '../images/sprite.symbol.svg';
+
 
 export function parkInfoTemplate(data) {
     return `
@@ -44,7 +46,7 @@ export function alertCardTemplate(alert) {
     <svg class="icon" role="presentation" focusable="false">
         <use
         xmlns:xlink="http://www.w3.org/1999/xlink"
-        xlink:href="/images/sprite.symbol.svg#alert-${alertType}"
+        xlink:href="${spritePath}#alert-${alertType}"
         ></use>
     </svg>
     <div>
